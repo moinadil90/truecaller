@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Truecaller</string>
+    <string name="_10th_character">10th Character</string>
+    <string name="every_10th_character">Every 10th Character</string>
+    <string name="this_looks_empty_text">This looks empty! Please make the API call by clicking on the button below and see the magic :).</string>
+    <string name="make_api_call_text">Make API Call</string>
+    <string name="truecaller">Truecaller</string>
+    <string name="making_api_call_text">Making API Call…</string>
+    <string name="text_every_tenth_char">Every Tenth Character: </string>
+    <string name="text_tenth_char">Tenth Character: </string>
+</resources>

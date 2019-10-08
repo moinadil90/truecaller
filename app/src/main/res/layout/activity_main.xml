@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tenth_character"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="14dp"
+            android:paddingTop="10dp"
+            android:text="@string/_10th_character"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/every_tenth_character"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/every_10th_character"
+            android:textColor="@color/text_color" />
+        <ImageView
+            android:id="@+id/empty_screen"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/ic_desert"/>
+
+        <TextView
+            android:id="@+id/empty_text_view"
+            android:padding="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="16dp"
+            android:text="@string/this_looks_empty_text"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curved_rect_red"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/button_color_red"
+            android:textSize="16sp"
+            android:text="@string/make_api_call_text" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/word_list"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_layout"
+        android:orientation="vertical" />
+
+</RelativeLayout>
